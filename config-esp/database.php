@@ -1,9 +1,9 @@
 <?php
 	class Database {
-		private static $dbName = 'id17188961_greenguard' ;
-		private static $dbHost = 'localhost' ;
-		private static $dbUsername = 'id17188961_guardgreen';
-		private static $dbUserPassword = 'Mazen000000@';
+		private static $dbName = 'F0SaNkPCly' ;
+		private static $dbHost = 'remotemysql.com' ;
+		private static $dbUsername = 'F0SaNkPCly';
+		private static $dbUserPassword = 'FJ2YKUB7gW';
 		 
 		private static $cont  = null;
 		 
