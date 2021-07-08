@@ -5,13 +5,13 @@
 header("Access-Control-Allow-Headers: Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With");*/
 
  
-$servername = "localhost";
+$servername = "remotemysql.com";
 
-$dbname = "id17188961_greenguard";
+$dbname = "F0SaNkPCly";
 
-$username = "id17188961_guardgreen";
+$username = "F0SaNkPCly";
 
-$password = "Mazen000000@";
+$password = "FJ2YKUB7gW";
 
 $con = mysqli_connect($servername, $username, $password ,$dbname);
  
