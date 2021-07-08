@@ -1,11 +1,11 @@
 <?php 
   class Database {
     // DB Params
-    private $host = 'remotemysql.com';
+    /*private $host = 'remotemysql.com';
     private $db_name = 'F0SaNkPCly';
     private $username = 'F0SaNkPCly';
     private $db_pass = 'ky3HtIoH0Y@';
-    private $conn;
+    private $conn;*/
     
 
     // DB Connect
