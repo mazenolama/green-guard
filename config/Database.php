@@ -2,7 +2,7 @@
     define('DB_HOST','remotemysql.com');
     define('DB_NAME','F0SaNkPCly');
     define('DB_USERNAME','F0SaNkPCly');
-    define('DB_PASS','ky3HtIoH0Y@');
+    define('DB_PASSWORD','ky3HtIoH0Y@');
   class Database {
     // DB Params
     /*private $host = 'remotemysql.com';
@@ -19,7 +19,7 @@
 
       try 
       { 
-        $this->conn = new PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_NAME,DB_USERNAME, DB_PASS);
+        $this->conn = new PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_NAME,DB_USERNAME, DB_PASSWORD);
         $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
       } 
       
