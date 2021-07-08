@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="utf-8">
+   <title>Update Test Page</title>
+
+  </head>
+  <body>
+
+    <div class="login-box">
+	 <form id="form" method="POST">
+             <h1>update</h1>
+            <div class="textbox">
+                <p>Admins</p>
+                <select id="admin">
+                    <option value="1">mazen</option>
+                    <option value="2">zeyad</option>
+                    <option value="5">ahmed</option>
+                </select>
+                <p>State</p>
+                <select id="state">
+                    <option value="bad">bad</option>
+                    <option value="normal">normal</option>
+                    <option value="perfect">perfect</option>
+                </select>
+             </div>
+    <br>
+          <input type="submit" name="submit" class="btn" value="submit" >
+	  </form>
+
+	</div>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<script>
+        var form = document.getElementById('form')
+
+        form.addEventListener('submit', function(e){
+        //auto submision of the form
+
+        e.preventDefault();
+        //var mode = document.getElementById('mode').value
+        var state = document.getElementById('state').value
+        var admin_id = document.getElementById('admin').value
+        fetch ("https://greenguard0.000webhostapp.com/apis/PUT/analysis",
+                {
+                    method : 'POST',
+                    body :JSON.stringify({
+                        state:state,
+                        admin_id:admin_id
+                    }),
+                    headers:{
+                        'Content-Type': 'multipart/form-data',
+                         'Accept': 'application/json'
+                    }
+                })
+                .then(function(response){
+                    return response.json()
+
+                })
+                .then(function(data){
+                    console.log(data)
+                });
+        });
+    </script>
+  </body>
+</html>
+
+

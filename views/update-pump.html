@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="utf-8">
+   <title>Update Test Page</title>
+
+  </head>
+  <body>
+
+    <div class="login-box">
+	    <form id="form" method="POST">
+             <h1>update pump state</h1>
+            <div class="textbox">
+                <p>Mode</p>
+                 <select id="mode">
+                    <option value="auto">auto</option>
+                    <option value="manual">manual</option>
+                </select>
+                <p>State</p>
+                <select id="state">
+                    <option value="on">on</option>
+                    <option value="off">off</option>
+                </select>
+             </div>
+             <br>
+          <input type="submit" name="submit" class="btn" value="submit" >
+	    </form>
+	</div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <script>
+        var form = document.getElementById('form')
+        form.addEventListener('submit', function(e){
+        //auto submision of the form
+        e.preventDefault();
+        var mode = document.getElementById('mode').value
+        var state = document.getElementById('state').value
+        var admin_id = '1';
+        
+        fetch ("https://greenguard0.000webhostapp.com/apis/PUT/pump",
+                {
+                    method : 'POST',
+                    body :JSON.stringify({
+                        mode:mode,
+                        state:state,
+                        admin_id:admin_id
+                    }),
+                    headers:{
+                        "Content-Type" :"multipart/form-data; charset=UTF-8"
+                    }
+                })
+                .then(function(response){
+                    return response.json()
+
+                })
+                .then(function(data){
+                    console.log(data)
+                });
+        });
+    </script>
+  </body>
+</html>
+
+
