@@ -1,4 +1,8 @@
 <?php 
+    define('DB_HOST','remotemysql.com');
+    define('DB_NAME','F0SaNkPCly');
+    define('DB_USERNAME','F0SaNkPCly');
+    define('DB_PASS','ky3HtIoH0Y@');
   class Database {
     // DB Params
     /*private $host = 'remotemysql.com';
@@ -6,6 +10,7 @@
     private $username = 'F0SaNkPCly';
     private $db_pass = 'ky3HtIoH0Y@';
     private $conn;*/
+
     
 
     // DB Connect
@@ -14,7 +19,7 @@
 
       try 
       { 
-        $this->conn = new PDO('mysql:host=' . $this->host . ';dbname=' . $this->db_name, $this->username, $this->db_pass);
+        $this->conn = new PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_NAME,DB_USERNAME, DB_PASS);
         $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
       } 
       
