@@ -1,4 +1,11 @@
 <?php
+
+ header('Access-Control-Allow-Origin: *');
+ //header('Content-Type: multipart/form-data');
+  header('Content-Type: application/json');
+  header('Access-Control-Allow-Headers: Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With');
+
+
   include '../../config-esp/database.php';
   
   if (!empty($_POST)) {

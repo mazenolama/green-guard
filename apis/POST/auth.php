@@ -1,16 +1,14 @@
 <?php 
 
- /* header("Access-Control-Allow-Origin: *");
- header("Content-Type: application/json");
-header("Access-Control-Allow-Headers: Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With");*/
-
+//header("Access-Control-Allow-Origin: *");
+header("Content-Type: application/json");
+header("Access-Control-Allow-Headers: Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With");
+header('Access-Control-Allow-Origin: *');
+//header('Content-Type: multipart/form-data');
  
 $servername = "remotemysql.com";
-
 $dbname = "F0SaNkPCly";
-
 $username = "F0SaNkPCly";
-
 $password = "FJ2YKUB7gW";
 
 $con = mysqli_connect($servername, $username, $password ,$dbname);

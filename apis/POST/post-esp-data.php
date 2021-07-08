@@ -1,15 +1,13 @@
 <?php
 
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Headers: Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With');
+header('Content-Type: multipart/form-data');
 
-$servername = "localhost";
-
-
-$dbname = "id16684157_greengurad";
-
-$username = "id16684157_greenguard";
-
-$password = "Mazen000000@";
-
+$servername = "remotemysql.com";
+$dbname = "F0SaNkPCly";
+$username = "F0SaNkPCly";
+$password = "FJ2YKUB7gW";
 
 
 $api_key_value = "tPmAT5Ab3j7F9";
