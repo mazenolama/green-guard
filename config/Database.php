@@ -4,7 +4,7 @@
     private $host = 'remotemysql.com';
     private $db_name = 'F0SaNkPCly';
     private $username = 'F0SaNkPCly';
-    private $password = 'ky3HtIoH0Y@';
+    private $db_pass = 'ky3HtIoH0Y@';
     private $conn;
     
 
@@ -14,7 +14,7 @@
 
       try 
       { 
-        $this->conn = new PDO('mysql:host=' . $this->host . ';dbname=' . $this->db_name, $this->username, $this->password);
+        $this->conn = new PDO('mysql:host=' . $this->host . ';dbname=' . $this->db_name, $this->username, $this->db_pass);
         $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
       } 
       
