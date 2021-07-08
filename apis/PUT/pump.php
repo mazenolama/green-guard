@@ -1,6 +1,6 @@
 <?php 
   // Headers
-  header('Access-Control-Allow-Headers: Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With');
+  //header('Access-Control-Allow-Headers: Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With');
   header('Access-Control-Allow-Origin: *');
   //header('Content-Type: text/html; charset=UTF-8');
  //header('Content-Type: application/json');
