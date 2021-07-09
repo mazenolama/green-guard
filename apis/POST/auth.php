@@ -6,7 +6,8 @@ header('Access-Control-Allow-Origin: *');
 header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, x-file-name");
 header('Access-Control-Allow-Methods: POST');
 //header('Content-Type: multipart/form-data');
-//header("Content-Type: application/json");
+header("Content-Type: application/json");
+header("Accept: application/json");
  
 $servername = "remotemysql.com";
 $dbname = "F0SaNkPCly";
