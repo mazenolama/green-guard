@@ -6,8 +6,8 @@
   //header('Method: PUT');
   header('Access-Control-Allow-Origin: *');
   header('Access-Control-Allow-Headers: Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With');
-  //header('Content-Type: multipart/form-data');
   header('Content-Type: application/json');
+  
   
   include_once '../../config/Database.php';
   include_once '../../controller/Controller.php';
