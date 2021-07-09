@@ -1,11 +1,7 @@
 <?php 
   // Headers
   //header('Access-Control-Allow-Origin: *');
-  $ch = curl_init( );
-  curl_setopt( $ch, CURLOPT_URL, 'https://guardgreen.herokuapp.com/apis/GET/sensors');
-  curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true);
-  curl_setopt( $ch, CURLOPT_USERPWD, ":mezo0000@");
-  return  curl_exec($ch); 
+
 
   header('Content-Type: application/json');
   header('Access-Control-Allow-Headers: Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With');
