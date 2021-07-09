@@ -4,7 +4,7 @@
   $ch = curl_init( );
   curl_setopt( $ch, CURLOPT_URL, 'https://guardgreen.herokuapp.com/apis/GET/sensors');
   curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true);
-  curl_setopt( $ch, CURLOPT_USERPWD, ":mezo0000@");
+  //curl_setopt( $ch, CURLOPT_USERPWD, ":mezo0000@");
   return  curl_exec($ch); 
 
   header('Content-Type: application/json');
