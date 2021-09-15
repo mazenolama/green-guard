@@ -1,10 +1,10 @@
 <?php 
   class Database {
     // DB Params
-    private $host = '';//remotemysql.com
-    private $db_name = '';//F0SaNkPCly
-    private $username = '';//F0SaNkPCly
-    private $db_pass = '';//FJ2YKUB7gW
+    private $host = 'b6ntd6lk9p2zyzsyloth-mysql.services.clever-cloud.com';//remotemysql.com
+    private $db_name = 'b6ntd6lk9p2zyzsyloth';//F0SaNkPCly
+    private $username = 'ujy6l6sgmvvfm2br';//F0SaNkPCly
+    private $db_pass = 'alXHlXuO6DkkTtVAHSTF';//FJ2YKUB7gW
     private $conn;
     
 
@@ -14,6 +14,7 @@
 
       try 
       { 
+        //mysql://ujy6l6sgmvvfm2br:alXHlXuO6DkkTtVAHSTF@b6ntd6lk9p2zyzsyloth-mysql.services.clever-cloud.com:3306/b6ntd6lk9p2zyzsyloth
         $this->conn = new PDO('mysql:host=' . $this->host . ';dbname=' . $this->db_name, $this->username, $this->db_pass);
         $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
       } 
