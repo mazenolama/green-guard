@@ -9,10 +9,10 @@ header('Access-Control-Allow-Methods: POST');
 header("Content-Type: application/json");
 header("Accept: application/json");
  
-$servername = "remotemysql.com";
-$dbname = "F0SaNkPCly";
-$username = "F0SaNkPCly";
-$password = "FJ2YKUB7gW";
+$servername = "b6ntd6lk9p2zyzsyloth-mysql.services.clever-cloud.com";
+$dbname = "b6ntd6lk9p2zyzsyloth";
+$username = "ujy6l6sgmvvfm2br";
+$password = "alXHlXuO6DkkTtVAHSTF";
 
 $con = mysqli_connect($servername, $username, $password ,$dbname);
  
