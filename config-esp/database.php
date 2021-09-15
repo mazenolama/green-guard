@@ -1,9 +1,9 @@
 <?php
 	class Database {
-		private static $dbName = ''; //'F0SaNkPCly' ;
-		private static $dbHost = ''; //'remotemysql.com' ;
-		private static $dbUsername = ''; //'F0SaNkPCly';
-		private static $dbUserPassword = ''; //'FJ2YKUB7gW';
+		private static $dbName = 'b6ntd6lk9p2zyzsyloth-mysql.services.clever-cloud.com'; //'F0SaNkPCly' ;
+		private static $dbHost = 'b6ntd6lk9p2zyzsyloth'; //'remotemysql.com' ;
+		private static $dbUsername = 'ujy6l6sgmvvfm2br'; //'F0SaNkPCly';
+		private static $dbUserPassword = 'alXHlXuO6DkkTtVAHSTF'; //'FJ2YKUB7gW';
 		 
 		private static $cont  = null;
 		 
